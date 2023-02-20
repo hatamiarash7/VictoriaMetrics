@@ -42,6 +42,7 @@ var rollupFuncs = map[string]bool{
 	"lag":                     true,
 	"last_over_time":          true,
 	"lifetime":                true,
+	"mad_over_time":           true,
 	"max_over_time":           true,
 	"min_over_time":           true,
 	"mode_over_time":          true,
@@ -72,12 +73,13 @@ var rollupFuncs = map[string]bool{
 	// `timestamp` function must return timestamp for the last datapoint on the current window
 	// in order to properly handle offset and timestamps unaligned to the current step.
 	// See https://github.com/VictoriaMetrics/VictoriaMetrics/issues/415 for details.
-	"timestamp":           true,
-	"timestamp_with_name": true,
-	"tlast_over_time":     true,
-	"tmax_over_time":      true,
-	"tmin_over_time":      true,
-	"zscore_over_time":    true,
+	"timestamp":              true,
+	"timestamp_with_name":    true,
+	"tlast_change_over_time": true,
+	"tlast_over_time":        true,
+	"tmax_over_time":         true,
+	"tmin_over_time":         true,
+	"zscore_over_time":       true,
 }
 
 // IsRollupFunc returns whether funcName is known rollup function.
