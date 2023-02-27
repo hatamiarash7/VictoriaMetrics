@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	cloud.google.com/go/storage v1.21.0
-	github.com/VictoriaMetrics/fastcache v1.9.0
+	github.com/VictoriaMetrics/fastcache v1.12.1
 
 	// Do not use the original github.com/valyala/fasthttp because of issues
 	// like https://github.com/valyala/fasthttp/commit/996610f021ff45fdc98c2ce7884d5fa4e7f9199b
@@ -12,7 +12,7 @@ require (
 	github.com/VictoriaMetrics/metrics v1.18.1
 	github.com/VictoriaMetrics/metricsql v0.40.0
 	github.com/aws/aws-sdk-go v1.43.21
-	github.com/cespare/xxhash/v2 v2.1.2
+	github.com/cespare/xxhash/v2 v2.2.0
 	github.com/cheggaaa/pb/v3 v3.0.8
 	github.com/golang/snappy v0.0.4
 	github.com/influxdata/influxdb v1.9.6
@@ -26,7 +26,7 @@ require (
 	github.com/valyala/quicktemplate v1.7.0
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
 	golang.org/x/oauth2 v0.0.0-20220309155454-6242fa91716a
-	golang.org/x/sys v0.0.0-20220319134239-a9b59b0215f8
+	golang.org/x/sys v0.5.0
 	google.golang.org/api v0.73.0
 	gopkg.in/yaml.v2 v2.4.0
 )
